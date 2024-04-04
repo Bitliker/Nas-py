@@ -299,13 +299,3 @@ def get_image_path(action,is_thumb:bool=False):
         return image_thumb_url+action
     else:
         return image_base_url+action
-
-'''test'''
-# os.environ['tmdb_token']='eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkOWJkMDg3M2YyOTc5NzQ1ODRjOTVkZDdhNzY4MmViMSIsInN1YiI6IjY1ZTE4ZGYzYTI4NGViMDE0YmQ0MzQxYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.f86NpcMGCTj1OM8XgvL2ifb9K3QN1qnrxZ-s1KFhSF4'
-# tmid = seach(MediaType.TV, '王牌对王牌',0)
-# print("tmid:",tmid)
-# if tmid:
-#     media_info = load_details_by_id(tmid, MediaType.TV)
-#     print("media_info:", media_info)
-#     season_info = get_season(tmid, 6)
-#     print("season_info:", season_info)
