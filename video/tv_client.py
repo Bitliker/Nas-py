@@ -309,7 +309,3 @@ class tv_client:
                 transfer_file(video_item,season_folder,video_file_name)
 
         return False
-
-os.environ['tmdb_token']='eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkOWJkMDg3M2YyOTc5NzQ1ODRjOTVkZDdhNzY4MmViMSIsInN1YiI6IjY1ZTE4ZGYzYTI4NGViMDE0YmQ0MzQxYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.f86NpcMGCTj1OM8XgvL2ifb9K3QN1qnrxZ-s1KFhSF4'
-client = tv_client()
-client.scraping_batch('D:\Test\TV')
