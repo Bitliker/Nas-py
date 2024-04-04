@@ -76,7 +76,9 @@ class tv_client:
         tmid = seach(type = MediaType.TV, query = title, year = year)
         if tmid is None:
             print("搜索不到信息，跳过")
-            return False
+            tmid = seach(type = MediaType.TV, query = title, year = 0)
+            if tmid is None:
+                return False
         print("搜索到信息:", tmid)
         return self.scraping_by_tmid(tmid, title, file_path, target_dir)   
 
